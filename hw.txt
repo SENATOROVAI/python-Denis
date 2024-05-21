@@ -3,7 +3,7 @@
 выполненные задания переносим в Архив(внизу файла)
 ==================================
 Git:
-1)подписаться на коллег https://github.com/orgs/SENATOROVAI/teams/senatorov-team   +      
+1)подписаться на коллег https://github.com/orgs/SENATOROVAI/teams/senatorov-team        
 2)оформить гитхаб https://www.youtube.com/watch?v=pm17VwdJ6UI  
 3)выбор шаблона https://github.com/abhisheknaiidu/awesome-github-profile-readme
 4)https://t.me/c/1937296927/3602/5714 (по желанию)
