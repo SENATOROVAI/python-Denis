@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+
+  percona:
+    tty: true
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+    image: "percona:latest"
+    volumes:
+      - ./final_project:/final_project
+    healthcheck:
+      test: ["CMD", "mysqladmin", "-uroot", "-ppass", "ping", "-h", "percona"]
+      timeout: 1s
+      retries: 30
+#
+#
+#  mock:
+#   build: .
+#   command: ["python3", "app.py"]
+#   depends_on:
+#     - percona
+
+  app:
+    image: "myapp"
+
+
+
+
+
+#version: '3'
+#services:
+#  api-tests:
+#    build:
+#      context: .
+#      dockerfile: ./docker/Dockerfile
+#    image: heik/api-tests:latest
+#    container_name: api-tests
+#    volumes:
+#      - .:/code
+#    command: "python3 -B -m pytest test/"
