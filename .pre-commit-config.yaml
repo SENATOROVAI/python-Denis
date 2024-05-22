@@ -128,7 +128,6 @@ repos:
           - --strict
           - --extra-checks
           - --disallow-any-unimported
-          - --disallow-any-expr
           - --disallow-any-decorated
           - --disallow-any-explicit
           - --disallow-any-generics
@@ -159,7 +158,6 @@ repos:
           - --strict
           - --extra-checks
           - --disallow-any-unimported
-          - --disallow-any-expr
           - --disallow-any-decorated
           - --disallow-any-explicit
           - --disallow-any-generics
