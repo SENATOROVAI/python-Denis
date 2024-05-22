@@ -69,7 +69,8 @@ repos:
       - id: codespell
         additional_dependencies:
           - tomli
-
+        args:
+          - --skip=*.js,*.html,*.css,*.svg",*.json,*.png,*.jpg,*.yml,*.yaml
   - repo: https://github.com/nbQA-dev/nbQA
     rev: 1.8.5
     hooks:
@@ -127,6 +128,7 @@ repos:
           - --strict
           - --extra-checks
           - --disallow-any-unimported
+          - --disallow-any-expr
           - --disallow-any-decorated
           - --disallow-any-explicit
           - --disallow-any-generics
@@ -157,6 +159,7 @@ repos:
           - --strict
           - --extra-checks
           - --disallow-any-unimported
+          - --disallow-any-expr
           - --disallow-any-decorated
           - --disallow-any-explicit
           - --disallow-any-generics
