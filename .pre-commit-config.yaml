@@ -1,4 +1,9 @@
 repos:
+  - repo: https://gitee.com/openmmlab/mirrors-docformatter
+    rev: v1.3.1
+    hooks:
+      - id: docformatter
+        args: ["--in-place", "--wrap-descriptions", "79"]
   - repo: https://github.com/asottile/add-trailing-comma
     rev: v3.1.0
     hooks:
@@ -129,7 +134,6 @@ repos:
           - --extra-checks
           - --disallow-any-unimported
           - --disallow-any-decorated
-          - --disallow-any-explicit
           - --disallow-any-generics
           - --disallow-subclassing-any
           - --local-partial-types
@@ -159,7 +163,6 @@ repos:
           - --extra-checks
           - --disallow-any-unimported
           - --disallow-any-decorated
-          - --disallow-any-explicit
           - --disallow-any-generics
           - --disallow-subclassing-any
           - --local-partial-types
